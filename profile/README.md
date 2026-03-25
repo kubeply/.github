@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/assets/banner-hero.svg" alt="Kubeply" width="100%"/>
+  <img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-hero.svg" alt="Kubeply" width="100%"/>
 </p>
 
 <p align="center">
@@ -19,27 +19,27 @@
 
 ---
 
-<img src="./docs/assets/banner-services.svg" alt="Services" width="100%"/>
+<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-services.svg" alt="Services" width="100%"/>
 
 We operate as a fractional platform engineering function for seed to Series A AI startups. Three engagement types, designed to match where you are.
 
 <br/>
 
-**`01` — AI Infra Audit** &nbsp;·&nbsp; *€500–1,500 · one-time*
+**`01` — AI Infra Audit**
 
 A structured assessment of your current stack. We review your cloud setup, deployment patterns, observability gaps, secrets hygiene, and AI/GPU runtime configuration. You get a prioritised remediation report. This is how most client relationships start.
 
-**`02` — Platform Foundation Setup** &nbsp;·&nbsp; *€5,000–15,000 · 4–8 week project*
+**`02` — Platform Foundation Setup**
 
 We deploy a production-grade Kubernetes baseline from scratch — or clean up what you have. Terraform-provisioned cluster, ArgoCD GitOps, ingress, TLS, observability, secrets management, backups, RBAC, and any AI-specific modules your team needs. You own the infrastructure. We own the delivery.
 
-**`03` — Platform Ops Retainer** &nbsp;·&nbsp; *€1,500–3,500 / month*
+**`03` — Platform Ops**
 
-We maintain what we built. Monthly upgrades, alert triage, module additions, incident response on the infra layer, cost optimisation, and a monthly infrastructure health report. Async-first, no on-call promises — but we're fast when it matters.
+We maintain what we built. Upgrades, alert triage, module additions, incident response on the infra layer, cost optimisation, and ongoing infrastructure health reporting. Async-first, no on-call promises — but we're fast when it matters.
 
 ---
 
-<img src="./docs/assets/banner-platform.svg" alt="Platform modules" width="100%"/>
+<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-platform.svg" alt="Platform modules" width="100%"/>
 
 Every client gets a baseline, then enables only the modules they need. Nothing unnecessary, nothing missing.
 
@@ -71,7 +71,7 @@ Every client gets a baseline, then enables only the modules they need. Nothing u
 
 ---
 
-<img src="./docs/assets/banner-clients.svg" alt="Ideal clients" width="100%"/>
+<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-clients.svg" alt="Ideal clients" width="100%"/>
 
 We work best with a specific type of company. If this sounds like you, we should talk.
 
@@ -89,29 +89,29 @@ We work best with a specific type of company. If this sounds like you, we should
 
 - Large enterprise with compliance-heavy requirements
 - Company with an existing platform team
-- Expecting 24/7 on-call at startup prices
+- Expecting 24/7 on-call coverage
 - Pre-revenue, unfunded — no budget for infrastructure
 
 ---
 
-<img src="./docs/assets/banner-process.svg" alt="How it works" width="100%"/>
+<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-process.svg" alt="How it works" width="100%"/>
 
 <br/>
 
 ```
-Step 1 — Audit (1–2 weeks)
+Step 1 — Audit
   We assess your current stack and deliver a prioritised report.
   This gets us aligned before any code is touched.
 
-Step 2 — Setup (4–8 weeks)
+Step 2 — Setup
   We provision your cluster, deploy the platform baseline,
   and enable the AI modules you need. You get runbooks,
   architecture docs, and a handover session.
 
-Step 3 — Retainer (ongoing)
-  We keep it running. Monthly upgrades, monitoring,
-  incident support on the infra layer, and a health report
-  every month so you always know the state of your platform.
+Step 3 — Operate
+  We keep it running. Upgrades, monitoring,
+  incident support on the infra layer, and regular reporting
+  so you always know the state of your platform.
 
 Step 4 — Handover (when you're ready)
   When you hire internally, we hand over cleanly.
@@ -122,10 +122,7 @@ Step 4 — Handover (when you're ready)
 
 ## Repositories
 
-| Repo | Description |
-|------|-------------|
-| [`ai-infra-platform`](https://github.com/kubeply/ai-infra-platform) | Public reference platform — Terraform modules, ArgoCD GitOps, platform modules, AI stack |
-| `.github` | This org profile |
+Explore [`ai-infra-platform`](https://github.com/kubeply/ai-infra-platform), our open source reference platform for Terraform provisioning, ArgoCD GitOps, platform modules, and the AI stack we run in production.
 
 ---
 
@@ -170,7 +167,7 @@ Database      CloudNativePG · Redis
 
 <p align="center">
   <sub>
-    Built by an ML engineer who runs this in production.<br/>
-    Interested in working together? <a href="mailto:hello@kubeply.com">hello@kubeply.com</a>
+    Built by a team who runs this in production.<br/>
+    Interested in working together? <a href="mailto:ops@kubeply.com">ops@kubeply.com</a>
   </sub>
 </p>
