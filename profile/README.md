@@ -2,20 +2,16 @@
   <img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-hero.svg" alt="Kubeply" width="100%"/>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/kubernetes-1.29%2B-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes"/>
-  <img src="https://img.shields.io/badge/terraform-1.7%2B-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform"/>
-  <img src="https://img.shields.io/badge/argocd-2.10%2B-EF7B4D?style=flat-square&logo=argo&logoColor=white" alt="ArgoCD"/>
-  <img src="https://img.shields.io/badge/GPU%20workloads-ready-14B8A6?style=flat-square" alt="GPU"/>
-  <img src="https://img.shields.io/badge/status-accepting%20clients-99F6E4?style=flat-square" alt="Status"/>
-</p>
-
 <br/>
 
-> We give early AI startups the production-grade Kubernetes infrastructure they need —
+> We give early AI startups the production-grade Kubernetes infrastructure they deserve —
 > before they can justify hiring a full platform team.
 
 <br/>
+
+<p align="center">
+Interested in working together? <a href="mailto:ops@kubeply.com">ops@kubeply.com</a>
+</p>
 
 ---
 
@@ -27,22 +23,19 @@ We operate as a fractional platform engineering function for AI startups. Three 
 
 **`01` — AI Infra Audit**
 
-> [!NOTE]
-> Find the infrastructure risks and gaps before they become production problems.
+> **Find the infrastructure risks and gaps before they become production problems.**
 
 We review your cloud setup, deployment patterns, observability gaps, secrets hygiene, and AI/GPU runtime configuration. You get a prioritised remediation report. This is how most client relationships start.
 
 **`02` — Platform Foundation Setup**
 
-> [!NOTE]
-> Stand up a production-grade AI platform your team can actually use.
+> **Stand up a production-grade AI platform your team can actually use.**
 
 We deploy a Kubernetes baseline from scratch — or clean up what you have. That includes Terraform-provisioned cluster infrastructure, ArgoCD GitOps, ingress, TLS, observability, secrets management, backups, RBAC, and any AI-specific modules your team needs. You own the infrastructure. We own the delivery.
 
 **`03` — Platform Ops**
 
-> [!NOTE]
-> Keep your AI infrastructure reliable without hiring a full internal platform team.
+> **Keep your AI infrastructure reliable without hiring a full internal platform team.**
 
 We maintain what we built through upgrades, alert triage, module additions, incident response on the infra layer, cost optimisation, and ongoing infrastructure health reporting. Async-first, but we're fast when it matters.
 
