@@ -1,0 +1,18 @@
+<svg width="900" height="60" viewBox="0 0 900 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="60" fill="#0a0e1a" rx="6"/>
+  <rect x="0" y="0" width="4" height="60" fill="#0F766E" rx="2"/>
+  <rect x="20" y="18" width="72" height="22" rx="3" fill="#0F766E30" stroke="#0F766E" stroke-width="0.75"/>
+  <text x="56" y="33" font-family="'SF Mono',monospace" font-size="9" fill="#99F6E4" text-anchor="middle" letter-spacing="0.5" font-weight="600">PLATFORM</text>
+  <text x="108" y="35" font-family="'SF Mono','Fira Code',monospace" font-size="17" font-weight="700" fill="#ffffff">platform modules</text>
+  <!-- module pills -->
+  <rect x="460" y="18" width="50" height="22" rx="11" fill="#14B8A620" stroke="#14B8A650" stroke-width="0.75"/>
+  <text x="485" y="33" font-family="'SF Mono',monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">vllm</text>
+  <rect x="518" y="18" width="58" height="22" rx="11" fill="#0F766E20" stroke="#0F766E50" stroke-width="0.75"/>
+  <text x="547" y="33" font-family="'SF Mono',monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">qdrant</text>
+  <rect x="584" y="18" width="42" height="22" rx="11" fill="#14B8A620" stroke="#14B8A650" stroke-width="0.75"/>
+  <text x="605" y="33" font-family="'SF Mono',monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">gpu</text>
+  <rect x="634" y="18" width="80" height="22" rx="11" fill="#0F766E20" stroke="#0F766E50" stroke-width="0.75"/>
+  <text x="674" y="33" font-family="'SF Mono',monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">workflows</text>
+  <rect x="722" y="18" width="74" height="22" rx="11" fill="#14B8A620" stroke="#14B8A650" stroke-width="0.75"/>
+  <text x="759" y="33" font-family="'SF Mono',monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600">postgres</text>
+</svg>

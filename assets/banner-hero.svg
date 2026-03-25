@@ -1,0 +1,33 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#0d1520"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#99F6E4;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#14B8A6;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#0F766E;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0F766E;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="200" fill="url(#bg)" rx="8"/>
+  <!-- accent dots -->
+  <circle cx="150" cy="80" r="2" fill="#14B8A6" opacity="0.5"/>
+  <circle cx="300" cy="120" r="2" fill="#0F766E" opacity="0.5"/>
+  <circle cx="600" cy="70" r="2" fill="#99F6E4" opacity="0.3"/>
+  <circle cx="750" cy="40" r="2" fill="#14B8A6" opacity="0.3"/>
+  <line x1="150" y1="80" x2="300" y2="120" stroke="#14B8A6" stroke-width="0.5" opacity="0.2"/>
+  <line x1="300" y1="120" x2="600" y2="70" stroke="#0F766E" stroke-width="0.5" opacity="0.2"/>
+  <line x1="600" y1="70" x2="750" y2="40" stroke="#14B8A6" stroke-width="0.5" opacity="0.2"/>
+  <!-- mark — bars right-aligned -->
+  <rect x="798" y="64"  width="34" height="10" rx="3" fill="#99F6E4"/>
+  <rect x="790" y="78"  width="42" height="10" rx="3" fill="#14B8A6"/>
+  <rect x="780" y="92"  width="52" height="10" rx="3" fill="#0F766E"/>
+  <!-- title -->
+  <text x="60" y="88" font-family="'SF Mono','Fira Code',monospace" font-size="34" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Kubeply</text>
+  <!-- subtitle -->
+  <text x="62" y="118" font-family="'SF Mono','Fira Code',monospace" font-size="13" fill="#99F6E4" letter-spacing="1">fractional kubernetes infrastructure for ai startups</text>
+  <!-- bottom line -->
+  <rect x="0" y="196" width="900" height="3" fill="url(#line)" rx="1"/>
+</svg>
