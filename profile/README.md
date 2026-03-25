@@ -6,12 +6,9 @@
 
 > We give early AI startups the production-grade Kubernetes infrastructure they deserve —
 > before they can justify hiring a full platform team.
-
+>
+> 👉 let's get in touch <a href="mailto:ops@kubeply.com">ops@kubeply.com</a>
 <br/>
-
-<p align="center">
-Interested in working together? <a href="mailto:ops@kubeply.com">ops@kubeply.com</a>
-</p>
 
 ---
 
