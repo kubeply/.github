@@ -4,5 +4,5 @@
   <rect x="20" y="18" width="72" height="22" rx="3" fill="#14B8A630" stroke="#14B8A6" stroke-width="0.75"/>
   <text x="56" y="33" font-family="'SF Mono',monospace" font-size="9" fill="#99F6E4" text-anchor="middle" letter-spacing="0.5" font-weight="600">PROCESS</text>
   <text x="108" y="35" font-family="'SF Mono','Fira Code',monospace" font-size="17" font-weight="700" fill="#ffffff">how it works</text>
-  <text x="878" y="35" font-family="'SF Mono',monospace" font-size="11" fill="#ffffff" opacity="0.45" text-anchor="end">audit → setup → retainer</text>
+  <text x="878" y="35" font-family="'SF Mono',monospace" font-size="11" fill="#ffffff" opacity="0.45" text-anchor="end">assess → build → maintain → handover</text>
 </svg>

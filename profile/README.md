@@ -21,21 +21,30 @@
 
 <img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-services.svg" alt="Services" width="100%"/>
 
-We operate as a fractional platform engineering function for seed to Series A AI startups. Three engagement types, designed to match where you are.
+We operate as a fractional platform engineering function for AI startups. Three engagement types, designed to match where you are.
 
 <br/>
 
 **`01` — AI Infra Audit**
 
-A structured assessment of your current stack. We review your cloud setup, deployment patterns, observability gaps, secrets hygiene, and AI/GPU runtime configuration. You get a prioritised remediation report. This is how most client relationships start.
+> [!NOTE]
+> Find the infrastructure risks and gaps before they become production problems.
+
+We review your cloud setup, deployment patterns, observability gaps, secrets hygiene, and AI/GPU runtime configuration. You get a prioritised remediation report. This is how most client relationships start.
 
 **`02` — Platform Foundation Setup**
 
-We deploy a production-grade Kubernetes baseline from scratch — or clean up what you have. Terraform-provisioned cluster, ArgoCD GitOps, ingress, TLS, observability, secrets management, backups, RBAC, and any AI-specific modules your team needs. You own the infrastructure. We own the delivery.
+> [!NOTE]
+> Stand up a production-grade AI platform your team can actually use.
+
+We deploy a Kubernetes baseline from scratch — or clean up what you have. That includes Terraform-provisioned cluster infrastructure, ArgoCD GitOps, ingress, TLS, observability, secrets management, backups, RBAC, and any AI-specific modules your team needs. You own the infrastructure. We own the delivery.
 
 **`03` — Platform Ops**
 
-We maintain what we built. Upgrades, alert triage, module additions, incident response on the infra layer, cost optimisation, and ongoing infrastructure health reporting. Async-first, no on-call promises — but we're fast when it matters.
+> [!NOTE]
+> Keep your AI infrastructure reliable without hiring a full internal platform team.
+
+We maintain what we built through upgrades, alert triage, module additions, incident response on the infra layer, cost optimisation, and ongoing infrastructure health reporting. Async-first, but we're fast when it matters.
 
 ---
 
@@ -79,7 +88,7 @@ We work best with a specific type of company. If this sounds like you, we should
 
 **Best fit**
 
-- AI startup, seed to Series A
+- Any startup with AI infrastructure needs
 - 2–15 engineers, no dedicated platform or infra hire yet
 - Running Docker Compose in production — or a single VM with a GPU attached
 - Moving toward your first paying customers and need reliability
@@ -99,21 +108,21 @@ We work best with a specific type of company. If this sounds like you, we should
 <br/>
 
 ```
-Step 1 — Audit
+Step 1 — Audit 🔍
   We assess your current stack and deliver a prioritised report.
   This gets us aligned before any code is touched.
 
-Step 2 — Setup
+Step 2 — Setup 🏗️
   We provision your cluster, deploy the platform baseline,
   and enable the AI modules you need. You get runbooks,
   architecture docs, and a handover session.
 
-Step 3 — Operate
+Step 3 — Operate ⚙️
   We keep it running. Upgrades, monitoring,
   incident support on the infra layer, and regular reporting
   so you always know the state of your platform.
 
-Step 4 — Handover (when you're ready)
+Step 4 — Handover 🤝 (when you're ready)
   When you hire internally, we hand over cleanly.
   Well-documented, no lock-in, no drama.
 ```
