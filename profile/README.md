@@ -1,4 +1,6 @@
-# Kubeply
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-kubeply.svg" alt="Kubeply: real infrastructure benchmarks and practical maintenance fixes" width="100%"/>
+</p>
 
 Kubeply helps teams maintain complex infrastructure faster and with fewer
 production mistakes.
