@@ -121,7 +121,8 @@ Step 4 — Handover 🤝 (when you're ready)
 
 ## Repositories
 
-Explore [`ai-infra-platform`](https://github.com/kubeply/ai-infra-platform), our open source reference platform for Terraform provisioning, ArgoCD GitOps, platform modules, and the AI stack we run in production.
+- [`infra-bench`](https://github.com/kubeply/infra-bench): open benchmark of realistic infrastructure tasks for evaluating AI agents.
+- [`ai-infra-platform`](https://github.com/kubeply/ai-infra-platform): open source reference platform for Terraform provisioning, ArgoCD GitOps, platform modules, and the AI stack we run in production.
 
 ---
 
