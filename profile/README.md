@@ -1,173 +1,35 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-hero.svg" alt="Kubeply" width="100%"/>
-</p>
+# Kubeply
 
-<br/>
+Kubeply helps teams maintain complex infrastructure faster and with fewer
+production mistakes.
 
-> We give early AI startups the production-grade Kubernetes infrastructure they deserve —
-> before they can justify hiring a full platform team.
->
-> 👉 let's get in touch <a href="mailto:ops@kubeply.com">ops@kubeply.com</a>
-<br/>
+We start with real infrastructure work: Kubernetes issues, production changes,
+cluster health, manual checks, runbooks, reliability problems, cost drift, and
+AI-readiness gaps. The goal is simple: measure the work, understand the pain,
+then turn repeated fixes into useful tooling.
 
----
+## InfraBench
 
-<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-services.svg" alt="Services" width="100%"/>
+InfraBench is our public proof layer: realistic infrastructure tasks with
+runnable checks. It is built to evaluate how humans and AI systems handle real
+platform engineering work, starting with Kubernetes.
 
-We operate as a fractional platform engineering function for AI startups. Three engagement types, designed to match where you are.
+[Explore infra-bench](https://github.com/kubeply/infra-bench).
 
-<br/>
+## If your infrastructure hurts
 
-**`01` — AI Infra Audit**
+Page us if your team is already losing time or confidence around:
 
-> **Find the infrastructure risks and gaps before they become production problems.**
+- fragile Kubernetes deployments or rollouts
+- manual checks before production changes
+- stale runbooks that only one person understands
+- observability gaps and unclear incident signals
+- reliability, cost, or AI infrastructure readiness questions
 
-We review your cloud setup, deployment patterns, observability gaps, secrets hygiene, and AI/GPU runtime configuration. You get a prioritised remediation report. This is how most client relationships start.
+[Page us](https://cal.eu/kubeply/discovery).
 
-**`02` — Platform Foundation Setup**
+## Contact
 
-> **Stand up a production-grade AI platform your team can actually use.**
-
-We deploy a Kubernetes baseline from scratch — or clean up what you have. That includes Terraform-provisioned cluster infrastructure, ArgoCD GitOps, ingress, TLS, observability, secrets management, backups, RBAC, and any AI-specific modules your team needs. You own the infrastructure. We own the delivery.
-
-**`03` — Platform Ops**
-
-> **Keep your AI infrastructure reliable without hiring a full internal platform team.**
-
-We maintain what we built through upgrades, alert triage, module additions, incident response on the infra layer, cost optimisation, and ongoing infrastructure health reporting. Async-first, but we're fast when it matters.
-
----
-
-<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-platform.svg" alt="Platform modules" width="100%"/>
-
-Every client gets a baseline, then enables only the modules they need. Nothing unnecessary, nothing missing.
-
-<br/>
-
-**Core baseline** — every client
-
-| Module | What it provides |
-|--------|-----------------|
-| `gitops/` | ArgoCD + Helm repo sources |
-| `networking/ingress-nginx` | Ingress controller + TLS |
-| `networking/cert-manager` | Let's Encrypt automation |
-| `observability/kube-prometheus-stack` | Prometheus + Grafana + Alertmanager |
-| `observability/loki` | Log aggregation |
-| `security/external-secrets` | Secrets management — Vault, AWS SSM, GCP |
-| `security/kyverno` | Policy engine + baseline rules |
-| `storage/velero` | Cluster backup + restore |
-
-**AI modules** — opt-in per client
-
-| Module | What it provides |
-|--------|-----------------|
-| `ai/gpu/` | NVIDIA device plugin + time-slicing |
-| `ai/vllm/` | LLM inference serving + autoscaling |
-| `ai/qdrant/` | Vector DB + persistence + backups |
-| `ai/postgres-operator/` | CloudNativePG + connection pooling |
-| `ai/redis/` | Redis + Sentinel |
-| `ai/argo-workflows/` | ML pipeline orchestration |
-
----
-
-<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-clients.svg" alt="Ideal clients" width="100%"/>
-
-We work best with a specific type of company. If this sounds like you, we should talk.
-
-<br/>
-
-**Best fit**
-
-- Any startup with AI infrastructure needs
-- 2–15 engineers, no dedicated platform or infra hire yet
-- Running Docker Compose in production — or a single VM with a GPU attached
-- Moving toward your first paying customers and need reliability
-- Founder or CTO who has personally felt the infra pain
-
-**Not a fit**
-
-- Large enterprise with compliance-heavy requirements
-- Company with an existing platform team
-- Expecting 24/7 on-call coverage
-- Pre-revenue, unfunded — no budget for infrastructure
-
----
-
-<img src="https://raw.githubusercontent.com/kubeply/.github/main/assets/banner-process.svg" alt="How it works" width="100%"/>
-
-<br/>
-
-```
-Step 1 — Audit 🔍
-  We assess your current stack and deliver a prioritised report.
-  This gets us aligned before any code is touched.
-
-Step 2 — Setup 🏗️
-  We provision your cluster, deploy the platform baseline,
-  and enable the AI modules you need. You get runbooks,
-  architecture docs, and a handover session.
-
-Step 3 — Operate ⚙️
-  We keep it running. Upgrades, monitoring,
-  incident support on the infra layer, and regular reporting
-  so you always know the state of your platform.
-
-Step 4 — Handover 🤝 (when you're ready)
-  When you hire internally, we hand over cleanly.
-  Well-documented, no lock-in, no drama.
-```
-
----
-
-## Repositories
-
-- [`infra-bench`](https://github.com/kubeply/infra-bench): open benchmark of realistic infrastructure tasks for evaluating AI agents.
-- [`ai-infra-platform`](https://github.com/kubeply/ai-infra-platform): open source reference platform for Terraform provisioning, ArgoCD GitOps, platform modules, and the AI stack we run in production.
-
----
-
-## Architecture philosophy
-
-Two layers. One clean handoff.
-
-```
-terraform/          → provisions cloud infrastructure
-                      cluster, DNS, storage, secrets backend
-                      outputs kubeconfig
-
-clusters/ + platform/ → ArgoCD owns everything inside
-                        opt-in modules per client
-                        GitOps reconciliation loop
-```
-
-Terraform creates the box. GitOps fills it.
-Every client cluster is isolated — separate repo, separate credentials, separate ArgoCD.
-Shared implementation, isolated deployment.
-
----
-
-## Stack
-
-```
-Cloud         Hetzner · GKE · EKS
-Provisioning  Terraform
-GitOps        ArgoCD
-Ingress       ingress-nginx + cert-manager
-Observability Prometheus + Grafana + Loki + Alertmanager
-Secrets       External Secrets Operator
-Backup        Velero
-Policy        Kyverno
-AI / GPU      vLLM · Qdrant · NVIDIA device plugin · Argo Workflows
-Database      CloudNativePG · Redis
-```
-
----
-
-<br/>
-
-<p align="center">
-  <sub>
-    Built by a team who runs this in production.<br/>
-    Interested in working together? <a href="mailto:ops@kubeply.com">ops@kubeply.com</a>
-  </sub>
-</p>
+- Website: [kubeply.com](https://kubeply.com/)
+- Call: [cal.eu/kubeply/discovery](https://cal.eu/kubeply/discovery)
+- Email: [ops@kubeply.com](mailto:ops@kubeply.com)
