@@ -33,5 +33,4 @@ Page us if your team is already losing time or confidence around:
 ## Contact
 
 - Website: [kubeply.com](https://kubeply.com/)
-- Call: [cal.eu/kubeply/discovery](https://cal.eu/kubeply/discovery)
 - Email: [ops@kubeply.com](mailto:ops@kubeply.com)
